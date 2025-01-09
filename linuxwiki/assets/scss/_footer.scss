@@ -1,0 +1,56 @@
+/* ------------------------------
+		Footer
+------------------------------ */
+.footer{
+    background-color:$bg-color;
+    .copyright{ 
+        padding:30px 0;
+        border-top:1px solid rgba($white-color,0.1);
+        p{
+            margin-bottom:0;
+            font-size: 15px;
+            text-align: center;
+            color:$text-dark-color; 
+            text-transform: capitalize;
+            a{
+                color:$white-color;
+                &:hover{
+                    color:$base-color;
+                }
+            }
+        }
+    } 
+    .back{
+        display:flex;
+        justify-content: flex-end;
+        .back-top {
+            width: 45px;
+            height: 45px;
+            background-color: $base-color;
+            position: fixed;
+            bottom: 15px;
+            right:30px;
+            border-radius: $rd-circle;
+            z-index: 9;
+            display: none;
+            text-align: center;
+            @include easeInOut(0.5);
+            border:1px solid $base-color;
+            i{
+                color: $gray-color;
+                line-height: 45px;
+                font-size: 16px;
+                text-align: center;
+                font-weight: 700;
+            }
+            &:hover{
+                @include shadow();
+                background-color:transparent;
+                 border:1px solid $base-color;
+                i{
+                    color:$base-color;
+                }
+            }
+        }
+    } 
+}

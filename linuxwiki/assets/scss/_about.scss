@@ -1,0 +1,50 @@
+/* ------------------------------
+		About
+------------------------------ */
+.about-us{
+	background-color: $white-color !important;
+	padding: 30px;
+	border-radius: $rd-round !important;
+	margin-bottom:50px;
+	@include shadow();
+	@include easeInOut(0.9);
+
+	&-image{
+		margin-top:-60px;
+		margin-bottom:50px;
+		border-radius: $rd-round;
+		box-shadow: 0 10px 10px rgba(0,0,0,0.08),0 0 0 transparent;
+		img{
+			border-radius: $rd-round;
+		}	
+	}
+	.description{
+		h6{
+			margin-bottom:15px;
+			font-size: 18px;
+		}
+		.quote{
+			background-color: $light-color;
+			padding:30px;
+			border-radius: $rd-round;
+			margin-top:30px;
+			margin-bottom:30px;
+			text-align: center;
+			i{
+				font-size: 30px;
+				color:$base-color;
+			}
+			h3{ 
+				margin-top:10px;
+				margin-bottom:10px;
+				color:$dark-color;
+			}
+			small{
+				color:$text-color;
+				font-weight: 400;
+			
+			}
+		}
+	}
+}
+

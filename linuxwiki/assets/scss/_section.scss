@@ -1,0 +1,22 @@
+/* ------------------------------
+		 Section
+------------------------------ */
+.section{
+	margin-top:65px;
+	background-color: $light-color;
+	&-title{
+		margin-bottom:30px;
+		margin-top:5px;
+		h5{
+			position: relative;
+			&:after{
+				background-color: $base-color;
+				display: block;
+				@include after(auto,-5px,30px,2px);
+			}
+		}
+		p{
+			margin-bottom:0;
+		}
+	}
+}

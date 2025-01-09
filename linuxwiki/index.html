@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- favicon -->
+    <link rel="icon" sizes="16x16" href="assets/img/linux-tux16x16.png">
+
+    <!-- Title -->
+    <title>title</title>
+
+     <!--Stylesheets -->
+     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+     <link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+     <link rel="stylesheet" type="text/css" href="assets/css/line-awesome.min.css">
+     <link rel="stylesheet" type="text/css" href="assets/css/swiper.min.css">
+ 
+     <!-- main style -->
+     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+     <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+ </head>
+ 
+ <body>
+
+    <!-- wrapper -->
+    <div id="wrapper" class="wrapper">
+        <!--loading -->
+        <div class="loading">
+            <div class="circle"></div>
+        </div>
+        <!--/-->
+ 
+          <!-- Header -->
+        <header class="header fixed-top">
+            <div class="header-main navbar-expand-xl">
+            <div class="container-fluid">
+                <div class="header-main">
+                    <!-- logo -->
+                    <div class="site-branding">
+                        <a class="dark-logo" href="index.html">
+                            <img src="assets/img/logo/logo-dark.png" alt="">
+                        </a>
+                        <a class="light-logo" href="index.html">
+                            <img src="assets/img/logo/logo-white.png" alt="">
+                        </a>
+                    </div><!--/-->
+                    
+                    <div class="main-menu header-navbar">
+                        <nav class="navbar">
+                        <!--navbar-collapse-->
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ">
+                                <!--Home -->
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#"> Главная </a>
+                                </li>
+                            
+                                <!--Blogs-->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="blog-list.html"> Все статьи </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/-->
+                        </nav>
+                    </div>
+
+                    <!-- header actions -->
+                    <div class="header-action-items">
+                        <!--header-social--> 
+                        <ul class="header-social list-inline">
+                            <li><a href="#" ><i class="fab fa-telegram fa-lg"></i></a></li>
+                        </ul>
+                                       
+                        <!--theme-switch-->
+                        <div class="theme-switch-wrapper switch-icon">
+                            <label class="theme-switch" for="checkbox">
+                            <input type="checkbox" id="checkbox">
+                            <span class="slider round ">
+                                <i class="lar la-sun icon-light"></i>
+                                <i class="lar la-moon icon-dark"></i>
+                            </span>
+                            </label>
+                        </div>
+
+                        <!--search-icon-->
+                        <div class="search-icon"> <a href="#search">  <i class="fas fa-search"></i></a></div>
+
+                        <!--navbar-toggler-->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>  
+                </div>
+            </div> 
+            </div>
+        </header><!--/-->
+
+        <main class="main">
+            <!--grid-layout-->
+            <section class="mt-90">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-6 col-md-6">
+                            <!--Post-1-->
+                            <div class="post-card">
+                                <!-- <div class="post-card-image">
+                                    <a href="post-default.html">
+                                        <img src="assets/img/blog/25.jpg" alt="">
+                                    </a>
+                                </div> -->
+                                <div class="post-card-content">
+                                    <div class="entry-cat">
+                                        <a href="blog-grid.html" class="categorie"> fashion</a>
+                                    </div>
+
+                                    <h5 class="entry-title">
+                                        <a href="post-default.html">Как запустить программу под Wine с ярлыка в терминале</a>
+                                    </h5>
+
+                                    <div class="post-exerpt">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quam atque ipsa laborum sunt distinctio... </p>
+                                    </div>
+
+                                    <ul class="entry-meta list-inline">
+                                        <li class="post-author-img"><a href="author.html"> <img src="assets/img/author/1.jpg" alt=""></a></li>
+                                        <li class="post-author"><a href="author.html">David Smith</a> </li>
+                                        <li class="post-date"> <span class="dot"></span>  February 10, 2022</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--/-->
+                        </div>
+
+                        <div class="col-xl-4 col-lg-6 col-md-6">
+                            <!--Post-2-->
+                            <div class="post-card">
+                                <!-- <div class="post-card-image">
+                                    <a href="post-default.html">
+                                        <img src="assets/img/blog/23.jpg" alt="">
+                                    </a>
+                                </div> -->
+                                <div class="post-card-content">
+                                    <div class="entry-cat">
+                                        <a href="blog-grid.html" class="categorie"> travel</a>
+                                    </div>
+
+                                    <h5 class="entry-title">
+                                        <a href="post-default.html">Как установить PostgreSQL</a>
+                                    </h5>
+
+                                    <div class="post-exerpt">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quam atque ipsa laborum sunt distinctio... </p>
+                                    </div>
+
+                                    <ul class="entry-meta list-inline">
+                                        <li class="post-author-img"><a href="author.html"> <img src="assets/img/author/1.jpg" alt=""></a></li>
+                                        <li class="post-author"><a href="author.html">David Smith</a> </li>
+                                        <li class="post-date"> <span class="dot"></span>  February 10, 2022</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--/-->
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6">
+                            <!--Post-3-->
+                            <div class="post-card">
+                                <!-- <div class="post-card-image">
+                                    <a href="post-default.html">
+                                        <img src="assets/img/blog/24.jpg" alt="">
+                                    </a>
+                                </div> -->
+                                <div class="post-card-content">
+                                    <div class="entry-cat">
+                                        <a href="blog-grid.html" class="categorie"> interior</a>
+                                    </div>
+
+                                    <h5 class="entry-title">
+                                        <a href="post-default.html">Как запускать игры от 2K Games в Steam без 2K Launcher</a>
+                                    </h5>
+
+                                    <div class="post-exerpt">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quam atque ipsa laborum sunt distinctio... </p>
+                                    </div>
+
+                                    <ul class="entry-meta list-inline">
+                                        <li class="post-author-img"><a href="author.html"> <img src="assets/img/author/1.jpg" alt=""></a></li>
+                                        <li class="post-author"><a href="author.html">David Smith</a> </li>
+                                        <li class="post-date"> <span class="dot"></span>  February 10, 2022</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--/-->
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6">
+                            <!--Post-4-->
+                            <div class="post-card">
+                                <!-- <div class="post-card-image">
+                                    <a href="post-default.html">
+                                        <img src="assets/img/blog/21.jpg" alt="">
+                                    </a>
+                                </div> -->
+                                <div class="post-card-content">
+                                    <div class="entry-cat">
+                                        <a href="blog-grid.html" class="categorie"> interior</a>
+                                    </div>
+
+                                    <h5 class="entry-title">
+                                        <a href="post-default.html">Как монтировать в Ubuntu разделы NTFS для записи после Windows 10</a>
+                                    </h5>
+
+                                    <div class="post-exerpt">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quam atque ipsa laborum sunt distinctio... </p>
+                                    </div>
+
+                                    <ul class="entry-meta list-inline">
+                                        <li class="post-author-img"><a href="author.html"> <img src="assets/img/author/1.jpg" alt=""></a></li>
+                                        <li class="post-author"><a href="author.html">David Smith</a> </li>
+                                        <li class="post-date"> <span class="dot"></span>  February 10, 2022</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--/-->
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6">
+                            <!--Post-5-->
+                            <div class="post-card">
+                                <!-- <div class="post-card-image">
+                                    <a href="post-default.html">
+                                        <img src="assets/img/blog/22.jpg" alt="">
+                                    </a>
+                                </div> -->
+                                <div class="post-card-content">
+                                    <div class="entry-cat">
+                                        <a href="blog-grid.html" class="categorie"> food</a>
+                                    </div>
+
+                                    <h5 class="entry-title">
+                                        <a href="post-default.html">Восстановление загрузки других ОС после установки Ubuntu 22.04</a>
+                                    </h5>
+
+                                    <div class="post-exerpt">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quam atque ipsa laborum sunt distinctio... </p>
+                                    </div>
+
+                                    <ul class="entry-meta list-inline">
+                                        <li class="post-author-img"><a href="author.html"> <img src="assets/img/author/1.jpg" alt=""></a></li>
+                                        <li class="post-author"><a href="author.html">David Smith</a> </li>
+                                        <li class="post-date"> <span class="dot"></span>  February 10, 2022</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--/-->
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6">
+                            <!--Post-6-->
+                            <div class="post-card">
+                                <!-- <div class="post-card-image">
+                                    <a href="post-default.html">
+                                        <img src="assets/img/blog/27.jpg" alt="">
+                                    </a>
+                                </div> -->
+                                <div class="post-card-content">
+                                    <div class="entry-cat">
+                                        <a href="blog-grid.html" class="categorie"> fashion</a>
+                                    </div>
+
+                                    <h5 class="entry-title">
+                                        <a href="post-default.html">5 Effective Ways I’m Finding Focus in a Busy Season of Life</a>
+                                    </h5>
+
+                                    <div class="post-exerpt">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quam atque ipsa laborum sunt distinctio... </p>
+                                    </div>
+
+                                    <ul class="entry-meta list-inline">
+                                        <li class="post-author-img"><a href="author.html"> <img src="assets/img/author/1.jpg" alt=""></a></li>
+                                        <li class="post-author"><a href="author.html">David Smith</a> </li>
+                                        <li class="post-date"> <span class="dot"></span>  February 10, 2022</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--/-->
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6">
+                            <!--Post-7-->
+                            <div class="post-card">
+                                <!-- <div class="post-card-image">
+                                    <a href="post-default.html">
+                                        <img src="assets/img/blog/26.jpg" alt="">
+                                    </a>
+                                </div> -->
+                                <div class="post-card-content">
+                                    <div class="entry-cat">
+                                        <a href="blog-grid.html" class="categorie"> livestyle</a>
+                                    </div>
+
+                                    <h5 class="entry-title">
+                                        <a href="post-default.html">5 Effective Ways I’m Finding Focus in a Busy Season of Life</a>
+                                    </h5>
+
+                                    <div class="post-exerpt">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quam atque ipsa laborum sunt distinctio... </p>
+                                    </div>
+
+                                    <ul class="entry-meta list-inline">
+                                        <li class="post-author-img"><a href="author.html"> <img src="assets/img/author/1.jpg" alt=""></a></li>
+                                        <li class="post-author"><a href="author.html">David Smith</a> </li>
+                                        <li class="post-date"> <span class="dot"></span>  February 10, 2022</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--/-->
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6">
+                            <!--Post-8-->
+                            <div class="post-card">
+                                <!-- <div class="post-card-image">
+                                    <a href="post-default.html">
+                                        <img src="assets/img/blog/28.jpg" alt="">
+                                    </a>
+                                </div> -->
+                                <div class="post-card-content">
+                                    <div class="entry-cat">
+                                        <a href="blog-grid.html" class="categorie"> food</a>
+                                    </div>
+
+                                    <h5 class="entry-title">
+                                        <a href="post-default.html">What Are Your Tips for Hosting an Easy Birthday Party?</a>
+                                    </h5>
+
+                                    <div class="post-exerpt">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quam atque ipsa laborum sunt distinctio... </p>
+                                    </div>
+
+                                    <ul class="entry-meta list-inline">
+                                        <li class="post-author-img"><a href="author.html"> <img src="assets/img/author/1.jpg" alt=""></a></li>
+                                        <li class="post-author"><a href="author.html">David Smith</a> </li>
+                                        <li class="post-date"> <span class="dot"></span>  February 10, 2022</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--/-->
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6">
+                            <!--Post-9-->
+                            <div class="post-card">
+                                <!-- <div class="post-card-image">
+                                    <a href="post-default.html">
+                                        <img src="assets/img/blog/20.jpg" alt="">
+                                    </a>
+                                </div> -->
+                                <div class="post-card-content">
+                                    <div class="entry-cat">
+                                        <a href="blog-grid.html" class="categorie"> travel</a>
+                                    </div>
+
+                                    <h5 class="entry-title">
+                                        <a href="post-default.html">Get the Most Out of Iceland with our 10 Travel Tips</a>
+                                    </h5>
+
+                                    <div class="post-exerpt">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quam atque ipsa laborum sunt distinctio... </p>
+                                    </div>
+
+                                    <ul class="entry-meta list-inline">
+                                        <li class="post-author-img"><a href="author.html"> <img src="assets/img/author/1.jpg" alt=""></a></li>
+                                        <li class="post-author"><a href="author.html">David Smith</a> </li>
+                                        <li class="post-date"> <span class="dot"></span>  February 10, 2022</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--/-->
+                        </div>
+
+                        <!--pagination-->
+                        <!-- <div class="col-lg-12">
+                            <div class="pagination">
+                                <ul class="list-inline">
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#"><i class="fas fa-arrow-right"></i></a> </li>
+                                </ul>
+                            </div> 
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+            <!--/-->
+
+            <!--newslettre-->
+            <!-- <section class="newslettre">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-10 col-sm-11 m-auto">
+                            <div class="newslettre-width text-center">
+                                <div class="newslettre-info">
+                                    <h3 class="title">
+                                        Get The Best Blog Stories into Your inbox!</h3>
+                                    <p> Sign up for free and be the first to get notified about new posts. </p>
+                                </div>
+                                <form action="#" class="newslettre-form">
+                                    <div class="form-flex">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Your email adress" required="required">
+                                        </div>
+                                        <button class="submit-btn" type="submit">Subscribe</button>
+                                    </div>
+                                </form>
+                                <div class="social-icones">
+                                    <ul class="list-inline">
+                                        <li>
+                                            <a href="#">
+                                                <i class="fab fa-facebook-f"></i>Facebook</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fab fa-twitter"></i>Twitter </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fab fa-instagram"></i>Instagram </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fab fa-youtube"></i>Youtube</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </section> -->
+        </main>
+
+
+    
+        <!--footer-->
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright">
+                            <p>© База знаний по Линукс, 2022-2023</p>
+                        </div>
+                        <div class="back">
+                            <a href="#" class="back-top">
+                                <i class="fas fa-arrow-up"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--Search-form-->
+        <div class="search">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 m-auto col-md-8 col-sm-11">
+                        <div class="search-width  text-center">
+                            <button type="button" class="close">
+                                <i class="fas fa-times"></i>
+                            </button>
+                            <form class="search-form" action="#">
+                                <input type="search" value="" placeholder="What are you looking for?">
+                                <button type="submit" class="search-btn">search</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--/-->
+    </div>
+
+    
+    <!--plugins -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/masonry.min.js"></script>
+    <script src="assets/js/theia-sticky-sidebar.min.js"></script>
+    <script src="assets/js/ajax-contact.js"></script>
+    <script src="assets/js/switch.js"></script>
+ 
+    <!-- JS main  -->
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>

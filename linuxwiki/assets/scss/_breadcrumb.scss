@@ -1,0 +1,17 @@
+/* ------------------------------
+		Breadcrumb
+------------------------------ */
+.breadcrumb{
+	&-section{
+		margin-top:40px;
+		margin-bottom:20px;
+	}
+	&-item {color: $text-color;
+		
+		a{
+			&:hover{
+				color:$base-color;
+			}
+		}
+	}
+}

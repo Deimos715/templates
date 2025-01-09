@@ -1,0 +1,176 @@
+/* -----------------------------------------------
+				CSS Styles 
+--------------------------------------------------
+
+    Template Name: NoonPost. - Personal Blog HTML Template
+    
+--------------------------------------------------
+
+Table of Content
+
+    - Global
+    - Helpers
+    - Section
+    - Navigation
+    - Widget
+    - Post
+    - Post-single
+    - Categorie
+    - Sliders
+    - About
+    - Contact 
+    - Footer
+	  - Preloader 
+    - Responsive
+    - Dark
+ 
+
+----------------------------------- */
+
+/* -----------------------------------
+		 Global
+----------------------------------- */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: inherit;
+	outline: none !important;
+	list-style: none !important;
+}
+
+*:after, 
+*:before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family:$font-body;
+    font-size: $f-s-p;
+    background-color:$light-color;
+    color:$text-color;
+    font-weight: 400;
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family:$font-title;
+    font-weight:900;
+    line-height:$line-height-base;
+    color:$dark-color;
+    margin:0;
+    
+}
+
+h1 {
+  font-size: $f-s-h1;
+}
+
+h2 {
+  font-size: $f-s-h2;
+}
+
+h3 {
+  font-size: $f-s-h3;
+}
+
+h4 {
+  font-size: $f-s-h4;
+}
+
+h5 {
+  font-size: $f-s-h5;
+}
+
+h6 {
+  font-size: $f-s-h6;
+}
+
+p:first-letter,
+h5:first-letter{
+  text-transform: capitalize;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    &:hover,
+    &:focus{
+       text-decoration: none;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul{
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.list-inline li{
+    display: inline-block; 
+}
+
+.max-width-400{
+    width:400px;
+}
+
+.inner-width{
+    width:600px;
+    margin:auto;
+}
+
+
+  
+.form-control:focus{
+    outline: none !important;
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.container-fluid{
+    max-width:1350px;    
+}
+
+.container-wrap{
+   padding:0px 50px; 
+   width:100%;
+}
+
+.main{
+    margin-top: 84px;
+    border-top:1px solid $light-color;
+}
+.display{
+    &-none{
+      display: none !important;
+    }
+    &-block{
+      display: block !important;
+    }
+}
+
+.blog-list{
+	padding-left: 30px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,48 @@
+/* ------------------------------
+		Categorie
+------------------------------ */
+.categorie{
+	background-color:$base-color ;
+	color:$gray-color;
+	border-radius: $rd-round;
+	@include easeInOut(0.5);
+	font-family: $font-title;
+    padding: 6px 12px 6px 12px;
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 20px;
+    text-transform: capitalize;
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
+	&:hover{
+		background-color:$bg-hover;
+		color:$white-color !important;
+	}
+
+	&-section{
+		margin-top:50px;
+		margin-bottom:40px;
+	}
+	&-title{
+		small{
+			a{
+				&:hover{
+					color:$base-color;
+				}
+			}
+			i{
+				margin:0 5px;
+			}
+		}
+		h3{
+			margin-bottom:10px;
+			span{
+				color:$base-color;
+			}
+		}
+		p{
+			margin-bottom:0px;
+		}
+	}
+}
