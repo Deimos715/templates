@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ONLIVPN</title>
+
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="MobileOptimized" content="176">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="robots" content="noindex,nofollow">
+    
+    <!-- default style -->
+    <link rel="stylesheet" href="/static/styles/style.css">
+    
+    <!-- bootstrap style -->
+    <link rel="stylesheet" href="/static/bootstrap_5.3.2/css/bootstrap.min.css">
+    
+
+    <style>
+        @font-face {
+            font-family: 'Evolventa-Bold'; /* Указываем имя для использования в CSS */
+            src: local('Evolventa-Bold'), 
+            url('/static/Evolventa-Bold.woff') format('woff'),
+            url('/static/Evolventa-Bold.otf') format('opentype'),
+            url('/static/Evolventa-Bold.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Evolventa-Regular'; /* Указываем имя для использования в CSS */
+            src: local('Evolventa-Regular'), 
+            url('/static/Evolventa-Regular.woff') format('woff'),
+            url('/static/Evolventa-Regular.otf') format('opentype'),
+            url('/static/Evolventa-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Evolventa-BoldOblique'; /* Указываем имя для использования в CSS */
+            src: local('Evolventa-BoldOblique'), 
+            url('/static/Evolventa-BoldOblique.woff') format('woff'),
+            url('/static/Evolventa-BoldOblique.otf') format('opentype'),
+            url('/static/Evolventa-BoldOblique.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrapper" class="wrapper">
+        <button onclick="topFunction()" id="button" title="Наверх"><img class="arrow" src="/static/arrow.svg" alt="back to top"></button>
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg navbar-dark main-menu">
+                        <div class="container">
+                            <div class="site-branding">
+                                <h1><img class="onli" src="/static/logo.svg" alt="onlivpn"></h1>
+                            </div>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" onclick="onClickbtn()" href="#" title="&lt;главная&gt;">&lt;главная&gt;</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" onclick="onClickbtn()" href="#" title="&lt;инструкции&gt;">&lt;инструкции&gt;</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" onclick="onClickbtn()" href="#" title="&lt;комьюнити&gt;">&lt;комьюнити&gt;</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="action">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item install">
+                                        <a class="nav-link" onclick="onClickbtn()" href="#" title="&lt;установить&gt;">&lt;установить&gt;</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1166 7" fill="none">
+                    <path d="M0.113249 3.5L3 6.38675L5.88675 3.5L3 0.613249L0.113249 3.5ZM1165.89 3.5L1163 0.613249L1160.11 3.5L1163 6.38675L1165.89 3.5ZM3 4H1163V3H3V4Z" fill="#70C3A7"/>
+                </svg>
+            </div>
+        </header>
+        <!-- / -->
+
+        <!-- Blockinfo -->
+        <section class="blockinfo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="first">
+                            <p class="main">&lt;БЫСТРАЯ&gt;</p>
+                            <div class="icons-info">
+                                <p class="speed"><img id="car" src="/static/car.png" alt="Car image"> скорость </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="second second-text-right">
+                            <p class="main">&lt;ДЕШЕВЫЕ&gt;</p>
+                            <div class="icons-info">
+                                <p class="plan"><img id="face" src="/static/face.png" alt="Car image"> тарифы</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="third third-text-left">
+                            <p class="main">&lt;БЕЗОПАСНЫЕ&gt;</p>
+                            <div class="icons-info">
+                                <p class="machine"><img id="locked" src="/static/locked.png" alt="Car image"> машины</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lx-12">
+                        <div class="middle">
+                            <p class="office">ОНЛИВПН в офисе, на работе, в универе, в дороге и просто хороший помощник в интернете</p>
+                            <button type="button" class="btn vpn-button">УСТАНОВИТЬ VPN</button>
+                        </div>
+                        <div class="linemid">
+                            <svg id="linemiddle" width="438" height="1" viewBox="0 0 438 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line y1="0.5" x2="438" y2="0.5" stroke="url(#paint0_linear_242_226)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_242_226" x1="219" y1="1" x2="219" y2="2" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#70C3A7"/>
+                                    <stop offset="1" stop-color="#70C3A7" stop-opacity="0"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- / -->
+
+        <!-- Advantages -->
+        <section class="blockadvantages">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="card">
+                            <div class="card-image">
+                                <img id="speedometr" src="/static/speedometr.svg" alt="SPEED image">
+                            </div>
+                            <div class="card-info">
+                                <p class="hightext">СКОРОСТЬ</p>
+                                <p>Мы не занижаем скорость передачи, не используем гигабайты.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="card">
+                            <div class="card-image">
+                                <img id="ruka" src="/static/ruka.svg" alt="PRICE image">
+                            </div>
+                            <div class="card-info">
+                            <p class="hightext">ЦЕНА</p>
+                            <p>Стоимость нашего VPN сервиса в разы ниже, чем у других конкурентов на рынке.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="card">
+                            <div class="card-image">
+                                <img id="ruble" src="/static/ruble.svg" alt="PRICE image">
+                            </div>
+                            <div class="card-info">
+                            <p class="hightext">ФИКСИРОВАННЫЙ ТАРИФ</p>
+                            <p>Без лишних подписок и услуг.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="card">
+                            <div class="card-image">
+                                <img id="dvatipa" src="/static/dvatipa.svg" alt="Car image">
+                            </div>
+                            <div class="card-info">
+                                <p class="hightext">ПРИГЛАСИ ДРУГА</p>
+                                <p>Получи дополнительно 10 дней бесплатно.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="card">
+                            <div class="card-image">
+                                <img id="shesterenka" src="/static/shesterenka.svg" alt="Car image">
+                            </div>
+                            <div class="card-info">
+                            <p class="hightext">БЫСТРАЯ НАСТРОЙКА</p>
+                            <p>Наша настройка простая и интуитивно понятная, что ее может настроить каждый.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="card">
+                            <div class="card-image">
+                                <img id="planetka" src="/static/planetka.svg" alt="Car image">
+                            </div>
+                            <div class="card-info">
+                                <p class="hightext">ЛУЧШИЕ МАШИНЫ</p>
+                                <p>Автоматическое подключение к лучшим машинам.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- / -->
+
+        <!-- Price -->
+        <section class="blockprice">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-1"></div>
+                    <div class="col-xl-5 col-lg-6 col-md-6">
+                        <div class="firstbox">
+                            <div class="price-image">
+                                <img id="firstface" alt="free" src="/static/face1.svg">
+                            </div>
+                            <div class="price-info">
+                                <p class="price-info-head">30 дней</p>
+                                <p class="price-info-conditions">Бесплатно</p>
+                                <button type="button" class="btn price-info-button">Подключить VPN</button>
+                            </div>   
+                        </div>
+                    </div>
+
+                    <div class="col-xl-5 col-lg-6 col-md-6">
+                        <div class="secondbox">
+                            <div class="price-image">
+                                <img id="secondface"  alt="fixed" src="/static/face2.svg">
+                            </div>
+                            <div class="price-info">
+                                <p class="price-info-head">Фиксированный тариф</p>
+                                <p class="price-info-conditions">99,00<span class="currency_name">руб/меc</span></p>
+                                <hr class="price-info-conditions-line">
+                                <ul>
+                                    <li>
+                                        Безлимитный
+                                    </li>
+                                    <li class="result">Нет платы за гигабайты</li>
+                                    <li>
+                                        Дешевый
+                                    </li>
+                                    <li class="result">Лучшая скорость по лучшей цене</li>
+                                    <li>
+                                        Быстрый
+                                    </li>
+                                    <li class="result">Используем лучший машинный парк</li>
+                                </ul>
+                                <button type="button" class="btn price-info-button my-button ">Подключить VPN</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-1"></div>
+                </div>
+            </div>
+        </section>
+        <!-- / -->
+
+        <!-- Instructions -->
+        <section class="blockinstructions">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-1"></div>
+                    <div class="col-xl-10">
+                        <h2>Инструкция</h2>
+                        <div class="step">
+                            <div class="step-number">
+                                <p>01</p>
+                            </div>
+                            <div class="step-action">
+                                <p>Запустите telegram-бот</p>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-xl-4">
+                                        <div class="step-action-block-action">
+                                            <div class="img-only">
+                                                <img src="/static/face3.svg" alt="onlivpn">
+                                            </div>
+                                            <div class="divtext">
+                                                <p class="text"><b>onlivpn > bot</b></p>
+                                                <p class="link">@onlivpnbot</p> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number translatey">
+                                <p>02</p>
+                            </div>
+                            <div class="step-action">
+                                <p>Следуйте инструкциям бота</p>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-xl-4">
+                                        <div class="step-action-block-action">
+                                            <div class="img">
+                                                <img class="img-label" src="/static/play.svg" alt="onlivpn">
+                                            </div>
+                                            <div class="divtext">
+                                                <p class="text"><b>watch video</b></p>
+                                                <p class="link device-text">iphone</p>
+                                            </div>
+                                            <img class="img-device" src="/static/apple.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4">
+                                        <div class="step-action-block-action mt">
+                                            <div class="img">
+                                                <img class="img-label" src="/static/play.svg" alt="onlivpn">
+                                            </div>
+                                            <div class="divtext">
+                                                <p class="text"><b>watch video</b></p>
+                                                <p class="link device-text">android</p>
+                                            </div>
+                                            <img class="img-device" src="/static/android.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4">
+                                        <div class="step-action-block-action mt">
+                                            <div class="img">
+                                                <img class="img-label" src="/static/play.svg" alt="onlivpn">
+                                            </div>
+                                            <div class="divtext">
+                                                <p class="text"><b>watch video</b></p>
+                                                <p class="link device-text">Mac linux</p>
+                                            </div>
+                                            <img class="img-device" src="/static/pingvin.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number translatey">
+                                <p>03</p>
+                            </div>
+                            <div class="step-action">
+                                <p>Подпишись</p>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-xl-4">
+                                        <div class="step-action-block-action">
+                                            <div class="img">
+                                                <img class="img-label" src="/static/chat.svg" alt="onlivpn">
+                                            </div>
+                                            <div class="divtext">
+                                                <p class="text"><b>community</b></p>
+                                                <p class="link chat-text">chat</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4">
+                                        <div class="step-action-block-action mt">
+                                            <div class="img">
+                                                <img class="img-label" src="/static/chat.svg" alt="onlivpn">
+                                            </div>
+                                            <div class="divtext">
+                                                <p class="text"><b>community</b></p>
+                                                <p class="link chat-text">chat</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-1"></div>
+                </div>
+            </div>
+            <div class="container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1166 7" fill="none">
+                    <path d="M0.113249 3.5L3 6.38675L5.88675 3.5L3 0.613249L0.113249 3.5ZM1165.89 3.5L1163 0.613249L1160.11 3.5L1163 6.38675L1165.89 3.5ZM3 4H1163V3H3V4Z" fill="#70C3A7"/>
+                </svg>
+            </div>
+        </section>
+        <!-- / -->
+
+        <!-- Footer -->
+        <footer class="pt-5 pb-5 footer">
+            <div class="footer-navbar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-4 about-company">
+                            <h2><img class="onli" src="/static/logo.svg" alt="onlivpn"></h2>
+                        </div>
+                        <div class="col-xl-4 links">
+                            <ul class="m-0 p-0 links-one">
+                                <li><a onclick="onClickbtn()" href="#" title="&lt;контакты&gt;">&lt;контакты&gt;</a></li>
+                                <li><a onclick="onClickbtn()" href="#" title="&lt;оплата заказа&gt;">&lt;оплата заказа&gt;</a></li>
+                                <li><a onclick="onClickbtn()" href="#" title="&lt;правила использования&gt;">&lt;правила использования&gt;</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-4 links">
+                            <ul class="links-two">
+                                <li><a onclick="onClickbtn()" href="consent.html" title="&lt;политика и конфиденциальности&gt;">&lt;политика конфиденциальности&gt;</a></li>
+                                <li><a onclick="onClickbtn()" href="#" title="&lt;политика конфиденциальности для  мобильного приложения&gt;">&lt;политика конфиденциальности для  мобильного приложения&gt;</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="payment-system">
+                <img src="/static/mastercard.svg" alt="Mastercard">
+                <img src="/static/visa.svg" alt="Visa">
+                <img src="/static/union.svg" alt="Union">
+                <img src="/static/mir.svg" alt="Mir">
+                <img src="/static/qiwi.svg" alt="Qiwi">
+            </div>  
+            <div class="row mt-5">
+                <div class="col copyright">
+                        <p class="">© Onlivpn, 2024</p>
+                </div>
+            </div>
+        </footer>
+        <!-- / -->
+
+    </div>
+
+    <script src="/static/js/main.js"></script>
+    <script src="/static/bootstrap_5.3.2/js/bootstrap.min.js"></script>
+</body>
+</html>

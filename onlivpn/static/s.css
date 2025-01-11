@@ -1,0 +1,211 @@
+
+/*
+CopyLeft 2020 Michael Rouves
+
+	This file is part of Michael's Clicker.
+	Michael's Clicker is free software: you can redistribute it and/or modify
+	it under the terms of the GNU Affero General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	Michael's Clicker is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+	GNU Affero General Public License for more details.
+
+	You should have received a copy of the GNU Affero General Public License
+	along with Michael's Clicker. If not, see <https://www.gnu.org/licenses/>.
+*/
+
+
+
+
+
+
+
+/* 
+	  ================= Main Clicker Button =================
+*/
+
+
+/* 
+	    ================= Money text Display =================
+*/
+
+
+
+
+
+@font-face {
+	font-family: 'Evolventa'; /* Указываем имя для использования в CSS */
+	src: local('Evolventa'), 
+			url('/static/Evolventa-Bold.woff') format('woff'),
+			url('/static/Evolventa-Bold.otf') format('opentype'),
+			url('/static/Evolventa-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+        body {
+
+			user-select: none;
+    -moz-user-select: none; /* Для Firefox */
+    -webkit-user-select: none; /* Для Chrome, Safari, и Opera */
+    -ms-user-select: none; /* Для Internet Explorer/Edge */
+    --bg-color: var(--tg-theme-bg-color, #fff);
+    font-family: Evolventa;
+    background-color: var(--bg-color);
+    color: var(--tg-theme-text-color, #222);
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    color-scheme: var(--tg-color-scheme);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+
+}
+* {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+body.gray {
+    background-color: var(--tg-theme-secondary-bg-color, #efefef);
+}
+
+a {
+    color: var(--tg-theme-link-color, #2678b6);
+}
+
+.btn {
+    font-size: 14px;
+    padding: 10px 17px;
+}
+
+.btn-primary {
+    background-color: var(--tg-theme-button-color, #50a8eb);
+    color: var(--tg-theme-button-text-color, #fff);
+    border: none;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    
+    font-size: 14px;
+    margin: 15px 0;
+    padding: 25px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--tg-theme-button-color, #50a8eb);
+    color: var(--tg-theme-button-text-color, #ffffff);
+    cursor: pointer;
+}
+.closebtn{
+    background-color:#cb6a6a;
+}
+
+h2,
+svg,
+.loader,
+h1,
+button#activateButton {
+    margin-top: 20px;
+}
+.button:disabled{
+	background-color: #B3B3B3;
+}
+.custom-checkbox{
+    width: 100px;
+    height: auto;
+    display: none;
+}
+.custom-error{
+    width: 100px;
+    height: auto;
+    display: none;
+}
+@keyframes spinner {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .loader {
+            border: 8px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top: 8px solid #70C3A7;
+            width: 40px;
+            height: 40px;
+            animation: spinner 1s linear infinite;
+            margin-top: 20px;
+            display: block; /* Initially hidden */
+        }
+        #activateButton:disabled {
+            background-color: #ccc;
+            color: #666;
+            cursor: not-allowed;
+        }
+        .keyRow {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .keyButtons {
+        display: flex;
+        gap: 20px; /* Увеличил промежуток между кнопками */
+    }
+
+    .keyButton {
+        min-width: calc(40px + 20%); /* Увеличил минимальную ширину кнопки */
+        padding: 10px 20px; /* Увеличил отступы кнопки */
+        font-size: 20px; /* Увеличил размер шрифта */
+        cursor: pointer;
+    }
+    .money-text{
+        font-size: 18px;
+        padding: 10px 20px;}
+
+
+		.clicker {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			width: 300px;
+			height: 300px;
+			background-color: #70C3A7;; /* Цвет блока */
+            transition: transform 0.3s ease-in-out; 
+            transition: transform 0.5s ease-in-out, box-shadow 0.2s ease;
+		}
+        .clicker::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 0, 0, 0.3); /* Цвет тени (черный с небольшой прозрачностью) */
+            z-index: -1;
+            transition: opacity 0.2s ease; /* Плавный переход для тени */
+            opacity: 0; /* Изначально тень невидима */
+        }
+		
+		.clicker:hover {
+			width: 280px;
+			height: 280px;
+		}
+
+        .clicker.clicked {
+            transform: scale(0.9); /* Уменьшаем размер кнопки */
+        }
+        .clicker.clicked::after {
+            opacity: 1; /* Показываем тень при клике */
+            transition-delay: 0.3s; /* Задержка для плавного исчезновения тени после клика */
+        }

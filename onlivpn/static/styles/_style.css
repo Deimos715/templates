@@ -1,0 +1,549 @@
+
+body {
+    background-color: #000000;
+    color: #fff;
+ /* Используем Evolventa в качестве первого варианта, затем Arial и, если нужно, другие шрифты */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 70px;
+}
+
+.line {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.onli {
+    position: absolute;
+    margin-left: -200px;
+    margin-top: -70px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.butt {
+    margin-left: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: -130px;
+    gap: 50px;
+    font-size: 14px;
+    font-family: Evolventa-Bold;
+    user-select: none;
+}
+
+.butt p {
+    cursor: pointer;
+}
+
+.install {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-left: 1050px;
+    margin-top: -31px;
+    justify-content: center;
+    cursor: pointer;
+    font-family: Evolventa-Bold;
+    font-size: 14px;
+    user-select: none;
+}
+
+.box {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.over {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.firstborder {
+    font-family: Evolventa-Bold;
+}
+
+.first {
+    margin-right: 600px;
+    font-size: 100px;
+    display: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.second {
+    margin-left: 700px;
+    font-size: 70px;
+    display: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100px);
+}
+
+.third {
+    margin-right: 600px;
+    font-size: 50px;
+    transform: translateY(-50px);
+    display: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.info {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* добавляем позицию relative к родительскому контейнеру */
+    width:100%;
+    font-family: Evolventa-Regular;
+}
+
+.info .speed {
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transform: translateY(-460px);
+    margin-right: 180px;
+    font-size: 19px;
+    border-radius: 21px;
+    background: rgba(58, 58, 58, 0.60);
+    box-shadow: 0px 0px 6.8px 3px rgba(0, 0, 0, 0.40);
+    backdrop-filter: blur(9.850000381469727px);
+    padding: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.info #car {
+    scale: 120%;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.info #face {
+    scale: 120%;
+    height: 20px;
+    transform: translateY(2px);
+    margin-right: 5px;
+}
+
+.info #locked {
+    scale: 120%;
+    height: 20px;
+    transform: translateY(2px);
+    margin-right: 5px;
+}
+
+.png {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* добавляем позицию relative к родительскому контейнеру */
+    width:100%;
+    transform: translateY(-350px);
+}
+
+
+.info .plan {
+    text-align: right;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transform: translateY(-350px);
+    margin-left: 370px;
+    font-size: 19px;
+    border-radius: 21px;
+    background: rgba(58, 58, 58, 0.60);
+    box-shadow: 0px 0px 6.8px 3px rgba(0, 0, 0, 0.40);
+    backdrop-filter: blur(9.850000381469727px);
+    padding: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.info .machine {
+    text-align: right;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transform: translateY(-150px);
+    margin-left: -810px;
+    font-size: 19px;
+    border-radius: 21px;
+    background: rgba(58, 58, 58, 0.60);
+    box-shadow: 0px 0px 6.8px 3px rgba(0, 0, 0, 0.40);
+    backdrop-filter: blur(9.850000381469727px);
+    padding: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.main {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.middle {
+    text-align: center;
+    width: 100%;
+
+}
+
+.middle .office {
+    color: rgb(98, 170, 146);
+    transform: translateY(-120px);
+    font-family: Evolventa-Regular;
+}
+
+.vpn-button {
+    display: inline-block;
+    padding: 15px 50px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(15, 16, 17);
+    background-color: rgb(112, 195, 167);
+    border-radius: 21px;
+    border: 2px none rgb(112, 195, 167);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    user-select: none;
+    transform: translateY(-100px);
+    font-family: Evolventa-Regular;
+
+}
+
+.vpn-button:hover {
+    background-color: #37836e; /* Цвет при наведении */
+    font-family: Evolventa-Bold;
+    font-size: 18px;
+    box-shadow: 0 0 10px rgba(112, 195, 167, 0.2);
+    bottom: -15px;
+}
+
+.linemid {
+    text-align: center;
+}
+
+.linemid #linemiddle {
+    scale: 110%;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .card {
+    text-align: center;
+    width: 400px; /* Фиксированная ширина блока */
+    height: 300px; /* Фиксированная высота блока */
+    margin: 10px;
+    border-radius: 10px;
+    padding: 30px;
+    color: rgb(185, 185, 185);
+    background-color: rgb(22, 22, 22);
+    font-family: Evolventa-Regular;
+    font-size: 16px;
+    box-sizing: border-box; /* Учитываем отступы и рамку в общую ширину и высоту */
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .card:hover {
+    background-color: rgb(64, 82, 96); /* Цвет при наведении */
+  }
+  
+  .hightext {
+    font-family: Evolventa-BoldOblique;
+    font-size: 20px;
+    color: white;
+  }
+  
+  .card:hover .hightext {
+    color: rgb(112, 195, 167); /* Цвет при наведении на .card */
+    transition: background-color 0.2s ease-in-out;
+
+  }
+
+  .card img {
+    max-width: 100%; /* Чтобы изображения внутри блока не выходили за его границы */
+    align-items: center;
+  }
+
+
+.ruble {
+    content: "₽";
+    position: relative;
+    font-family: Evolventa-Regular;
+    color: rgb(112, 195, 167);
+    font-size: 20px; /* Размер рамки */
+    display: inline-block;
+    transform: scale(3);
+}
+
+#speedometr{
+    position: static;
+    display: flex;
+    top: 0%;
+    margin-left: 133px;
+    transform: translateY(-50%);
+    scale: 80%;
+}
+
+#ruka {
+    position: static;
+    display: flex;
+    top: 0%;
+    margin-left: 145px;
+    transform: translateY(-50%);
+}
+
+#dvatipa {
+    position: static;
+    display: flex;
+    top: 0%;
+    margin-left: 140px;
+    transform: translateY(-45%);
+}
+
+#shesterenka {
+    position: static;
+    display: flex;
+    top: 0%;
+    margin-left: 137px;
+    transform: translateY(-50%);
+}
+
+#planetka {
+    position: static;
+    align-items: center;
+    display: flex;
+    top: 0%;
+    margin-left: 145px;
+    transform: translateY(-50%);
+}
+
+
+.containerbox {
+    display: flex;
+    justify-content: center;
+    font-family: Evolventa-Bold;
+}
+
+.firstbox, .secondbox {
+    border-radius: 30px;
+    background-color: rgb(22, 22, 22); /* Цвет фона, можно изменить под свой дизайн */
+    padding: 20px;
+    margin: 100px;
+    width: 400px;
+    text-align: center;
+}
+
+#secondface {
+    position: static;
+    display: flex;
+    top: 0%;
+    margin-left: 130px;
+    transform: translateY(-80px);
+ 
+}
+
+#textone {
+    font-family: Evolventa-BoldOblique;
+    font-size: 22px;
+    transform: translateY(-60px);
+}
+
+
+
+#texttwo {
+    font-family: Evolventa-BoldOblique;
+    font-size: 20px;
+    transform: translateY(-70px);
+}
+
+#linetext {
+    font-size: 2px;
+}
+
+#firstface {
+    position: static;
+    display: flex;
+    top: 0%;
+    margin-left: 130px;
+    transform: translateY(-80px);
+    
+}
+
+.firstbox {
+    margin-right: 30px;
+    height: 350px;
+    font-size: 60px;
+}
+
+#dada {
+    transform: translateY(-120px);
+}
+
+#keke {
+    display: inline-block;
+    padding: 15px 80px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    user-select: none;
+    transform: translateY(-150px);
+    cursor: pointer;
+    background-color: rgb(64, 82, 96);
+}
+
+
+.secondbox {
+    margin-left: 30px;
+    height: 600px;
+}
+#dev {
+    font-size: 60px;
+    transform: translateY(-110px);
+}
+#smalltext {
+    font-size: 14px;
+    transform: translateY(-170px);
+    font-family: Evolventa-Regular;
+}
+#linetext {
+    transform: translateY(-170px);
+    font-size: 3px;
+}
+
+#bezlimit {
+    transform: translateY(-155px);
+    margin-right: 119px;
+    color: rgb(112, 195, 167);
+}
+
+#netplaty {
+    font-family: Evolventa-Regular;
+    font-size: 14px;
+    transform: translateY(-164px);
+    margin-right: 64px;
+}
+
+#desheviy {
+    transform: translateY(-160px);
+    margin-right: 150px; 
+    color: rgb(112, 195, 167);
+}
+
+#lychaya {
+    font-family: Evolventa-Regular;
+    transform: translateY(-170px);
+    margin-left: 9px;
+    font-size: 14px;
+
+}
+
+#bistriy {
+    color: rgb(112, 195, 167);
+    transform: translateY(-170px);
+    margin-right: 156px;
+}
+
+#ispolzyem {
+    font-family: Evolventa-Regular;
+    transform: translateY(-180px);
+    margin-left: 30px;
+    font-size: 14px;
+}
+
+#kaka {
+    display: inline-block;
+    padding: 15px 80px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(15, 16, 17);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    user-select: none;
+    transform: translateY(-175px);
+    cursor: pointer;
+    background-color: rgb(112, 195, 167);
+}
+
+#inst {
+    text-align: center;
+    font-size: 50px;
+    font-family: Evolventa-Regular;
+    transform: translateY(-60px);
+}
+
+
+.step {
+    background-color: rgb(64, 82, 96);
+    color: white;
+    padding: 5px;
+    margin: 50px;
+    border-radius: 30px;
+    width: 60%;
+    margin-left: 350px;
+}
+
+.stepnumber {
+    font-size: 120px;
+    color: rgb(112, 195, 167);
+    font-family: Evolventa-Regular;
+    margin-right: 50px;
+    transform: translateY(50px);
+    font-size: 120px;
+}
+
+.stepcontent p {
+    margin-left: 150px;
+    transform: translateY(-120px);
+    font-size: 24px;
+    font-family: Evolventa-Regular;
+}
+ 

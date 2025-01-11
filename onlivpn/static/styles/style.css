@@ -1,0 +1,900 @@
+/* general styles start */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000000 !important;
+    color: #fff !important;
+ /* Используем Evolventa в качестве первого варианта, затем Arial и, если нужно, другие шрифты */
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+/* Back to top button start */
+#button {
+    background-color: #3A3A3A;
+    width: 72px;
+    height: 72px;
+    border-radius: 14px;
+    text-align: center;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 12px 18px 18px 18px;
+}
+
+#button:hover {
+    background-color: #3A3A3A;
+}
+/* Back to top button end */
+/* general styles end */
+
+
+
+/* header style start */
+.header {
+    margin: 64px 0;
+}
+
+.header .main-menu .nav-item .nav-link {
+    color: #fff
+}
+
+.header .main-menu .install {
+    margin-top: 3px;
+    font-family: Evolventa-Bold;
+    font-size: 14px;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(112, 195, 167, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+@media (max-width: 992px) {
+    .action {
+        display: none;
+    }
+}
+/* header style end */
+
+
+
+/* blockinfo style start */
+.blockinfo {
+    font-family: Evolventa-Bold;
+}
+
+.first {
+    position: relative;
+    display: inline-block;
+}
+
+.second {
+    position: relative;
+}
+
+.third {
+    position: relative;
+    display: inline-block;
+}
+
+.first .main {
+    font-size: 100px;
+    display: inline;
+}
+
+.second .main {
+    font-size: 70px;
+    display: inline;
+}
+
+.second-text-right {
+    text-align: right;
+}
+
+.third .main {
+    font-size: 50px;
+    display: inline;
+}
+
+.third-text-left {
+    margin-left: 120px;
+}
+
+/* @media info start  */
+@media (max-width: 992px) {
+    .first .main {
+        font-size: 72px;
+    }
+}
+
+@media (max-width: 440px) {
+    .first .main {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 992px) {
+    .icons-info .speed, .icons-info .plan, .icons-info .machine {
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .second .main {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 440px) {
+    .second .main {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 992px) {
+    .third  .main {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 440px) {
+    .third  .main {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 767px) {
+    .third-text-left {
+        margin-left: 60px;
+    }
+}
+
+@media (max-width: 440px) {
+    .speed, .plan {
+        bottom: -20px !important;
+    }
+}
+
+@media (max-width: 440px) {
+    .plan {
+        bottom: -25px !important;
+    }
+}
+
+@media (max-width: 440px) {
+    .third-text-left {
+        margin-left: 0;
+    }
+}
+
+/* @media info end */
+
+.icons-info #car {
+    /* scale: 120%; */
+    /* width: 20px; */
+    transform: scale(1.2);
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: initial;
+}
+
+.icons-info #face {
+    /* scale: 120%; */
+    height: 20px;
+    /* width: 20px; */
+    transform: scale(1.2);
+    transform: translateY(2px);
+    margin-right: 5px;
+    vertical-align: initial;
+}
+
+.icons-info #locked {
+    /* scale: 120%; */
+    height: 20px;
+    /* width: 20px; */
+    transform: scale(1.2);
+    transform: translateY(2px);
+    margin-right: 5px;
+    vertical-align: initial;
+}
+
+.png {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width:100%;
+    transform: translateY(-350px);
+}
+
+.icons-info {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width:100%;
+    font-family: Evolventa-Regular;
+}
+
+.icons-info .speed {
+    text-align: right;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    right: -10px;
+    font-size: 19px;
+    border-radius: 21px;
+    background: rgba(58, 58, 58, 0.60);
+    box-shadow: 0px 0px 6.8px 3px rgba(0, 0, 0, 0.40);
+    backdrop-filter: blur(9.850000381469727px);
+    padding: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.icons-info .plan {
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -15px;
+    right: -5px;
+    font-size: 19px;
+    border-radius: 21px;
+    background: rgba(58, 58, 58, 0.60);
+    box-shadow: 0px 0px 6.8px 3px rgba(0, 0, 0, 0.40);
+    backdrop-filter: blur(9.850000381469727px);
+    padding: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.icons-info .machine {
+    text-align: right;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -30px;
+    right: -10px;
+    font-size: 19px;
+    border-radius: 21px;
+    background: rgba(58, 58, 58, 0.60);
+    box-shadow: 0px 0px 6.8px 3px rgba(0, 0, 0, 0.40);
+    backdrop-filter: blur(9.850000381469727px);
+    padding: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.middle {
+    text-align: center;
+    margin: 100px 0 100px 0;
+
+}
+
+.middle .office {
+    color: rgb(98, 170, 146);
+    font-family: Evolventa-Regular;
+}
+
+.middle  .vpn-button {
+    padding: 15px 50px;
+    background-color: rgb(112, 195, 167);
+    border-radius: 21px;
+    font-family: Evolventa-Regular;
+
+}
+
+.middle .vpn-button:hover{
+    background-color: rgb(112, 195, 167) !important;;
+}
+
+.linemid {
+    text-align: center;
+}
+
+.linemid #linemiddle {
+    transform: scale(1.1);
+}
+
+/* @media price start  */
+@media (max-width: 767px) {
+    .linemid #linemiddle  {
+        width: 50%;
+    }
+}
+
+/* @media price end  */
+
+
+/* blockinfo  style end */
+
+
+
+/* Advantages style start */
+.blockadvantages {
+    margin-top: 100px;
+}
+
+.blockadvantages .card {
+    text-align: center;
+    height: 300px; /* Фиксированная высота блока */
+    margin: 10px;
+    border-radius: 10px;
+    padding: 30px;
+    color: rgb(185, 185, 185);
+    background-color: rgb(22, 22, 22);
+    font-family: Evolventa-Regular;
+    font-size: 16px;
+    box-sizing: border-box; /* Учитываем отступы и рамку в общую ширину и высоту */
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.blockadvantages .card-info {
+    padding-top: 30px;
+}
+
+.blockadvantages .card:hover {
+    background-color: rgb(64, 82, 96); /* Цвет при наведении */
+}
+
+.blockadvantages .hightext {
+    font-family: Evolventa-BoldOblique;
+    font-size: 20px;
+    color: white;
+}
+
+.blockadvantages .card:hover .hightext {
+    color: rgb(112, 195, 167); /* Цвет при наведении на .card */
+    transition: background-color 0.2s ease-in-out;
+
+}
+
+.blockadvantages .card img {
+    max-width: 100%; /* Чтобы изображения внутри блока не выходили за его границы */
+    align-items: center;
+
+}
+/* Advantages style end */
+
+
+
+/* Price style start */
+.blockprice {
+    margin-top: 150px;
+}
+
+.blockprice .firstbox, .blockprice .secondbox {
+    border-radius: 30px;
+    background-color: rgb(22, 22, 22);
+    padding: 20px 20px 70px 20px;
+    text-align: center;
+}
+
+.blockprice .price-image {
+    transform: translateY(-80px)
+}
+
+.blockprice .price-info .price-info-head {
+    font-family: Evolventa-BoldOblique;
+    font-size: 22px;
+    transform: translateY(-60px);
+}
+
+.blockprice .price-info .price-info-conditions {
+    font-family: Evolventa-BoldOblique;
+    font-size: 64px;
+    transform: translateY(-70px);
+}
+
+
+/* @media price start  */
+@media (max-width: 992px) {
+    .blockprice .price-info .price-info-conditions {
+        font-size: 54px;
+    }
+}
+
+@media (max-width: 440px) {
+    .blockprice .price-info .price-info-conditions {
+        font-size: 38px;
+    }
+}
+
+/* @media price end  */
+
+.blockprice .price-info .currency_name {
+    font-size: 14px;
+    font-family: Evolventa-Regular;
+    display: block;
+    margin-bottom: 20px
+}
+
+.blockprice .price-info .price-info-conditions-line {
+    transform: translateY(-70px);
+    color: #fff;
+    width: 245px;
+    margin: 0 auto;
+}
+
+.blockprice .price-info .price-info-button {
+    display: inline-block;
+    padding: 15px 80px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    user-select: none;
+    cursor: pointer;
+    background-color: rgb(64, 82, 96);
+}
+
+.blockprice .price-info .price-info-button:hover {
+    background-color: rgb(64, 82, 96);
+}
+
+.blockprice .price-info .my-button{
+    background-color:#37836e;
+}
+
+.blockprice .price-info .my-button:hover{
+    background-color:#37836e;
+}
+
+.blockprice .price-info ul {
+    text-align: left;
+    transform: translateY(-40px);
+}
+
+.blockprice .price-info ul li {
+    color: rgb(112, 195, 167);
+}
+
+.blockprice .price-info ul li::before{
+    content: "";
+    display: inline-block;
+    width: 20px; /* Задайте ширину */
+    height: 20px; /* Задайте высоту */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../li.svg");
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.price-info .result {
+    font-family: Evolventa-Regular;
+    font-size: 14px !important;
+    margin: 5px 0 0 35px !important;
+    color:#fff !important;
+}
+
+li.result::before {
+    content: none !important;
+}
+
+/* @media price start  */
+@media (max-width: 767px) {
+    .blockprice .secondbox  {
+        margin-top: 90px;
+    }
+}
+ /* @media price end */
+
+/* Price style end */
+
+
+
+/* Instructions style start */
+.blockinstructions {
+    margin-top: 82px;
+    text-align: center;
+}
+
+.blockinstructions h2 {
+    font-size: 59px;
+    margin-bottom: 82px;
+}
+
+.blockinstructions .step {
+    background-color: rgb(64, 82, 96);
+    color: white;
+    padding-left: 28px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.blockinstructions .step:last-child {
+    margin-bottom: 32px;
+}
+
+.blockinstructions .step .step-number {
+    /* align-self: flex-start; */
+    color: rgb(112, 195, 167);
+    font-family: Evolventa-Regular;
+    /* margin-right: 50px; */
+    font-size: 120px;
+    transform: translateY(10px);
+
+    margin-right: 10px
+}
+
+.blockinstructions .step .step-action {
+    /* align-self: flex-start; */
+    font-family: Evolventa-Regular;
+    font-size: 20px;
+    /* transform: translateY(-30px); */
+    width: 100%;
+    padding: 20px 0;
+}
+
+
+.blockinstructions .step .step-action p {
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.blockinstructions .step .img-label {
+    transform: translateY(-20px) translateX(-20px);
+}
+
+.blockinstructions .step .step-action hr {
+    margin-right: 30px;
+    border-top: 2px solid #fff;
+}
+
+.blockinstructions .step .step-action .step-action-block-action .divtext {
+    margin-right: 10px;
+}
+
+.blockinstructions .step .step-action .step-action-block-action {
+    background-color: #252D3A;
+    border-radius: 15px;
+    padding: 10px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #fff;
+
+}
+
+
+.blockinstructions .step .step-action .step-action-block-action .img-only {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 10px;
+
+}
+
+.blockinstructions .step .step-action .step-action-block-action .text {
+    font-size: 14px;
+}
+
+.blockinstructions .step .step-action .step-action-block-action .link {
+    font-size: 12px;
+    color: #6592B9;
+}
+
+.blockinstructions .step .step-action .step-action-block-action .device-text {
+    font-size: 12px;
+    color: #fff;
+}
+
+.blockinstructions .step .step-action .step-action-block-action .chat-text {
+    font-size: 12px;
+    color: #70C3A7;
+}
+
+/* @media instructions start  */
+
+@media (max-width: 1199px) {
+    .blockinstructions .step .step-action .mt {
+        margin-top: 15px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    /* .blockinstructions .step .translatey {
+        transform: translateY(-90px);
+    } */
+
+    .blockinstructions .step .step-number p {
+        text-align: center;
+        font-size: 60px;
+        /* width: 100vw; */
+        position: absolute;
+        left: 0;
+        margin: 0;
+    }
+
+    /* .blockinstructions .step .step-action .mt {
+        margin-top: 15px;
+    } */
+
+    .blockinstructions .step .step-action .step-action-block-action {
+        margin-left: 70px;
+    }
+
+    .blockinstructions .step .step-action p {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .blockinstructions .step .step-action {
+        /* padding: 20px 0; */
+        position: relative;
+
+    }
+
+    .blockinstructions .step .step-number {
+        /* transform: translateY(-10px); */
+        margin-top: -40px;
+
+    }
+
+}
+/* @media instructions end  */
+
+/* Instructions style end */
+
+
+/* Footer start */
+.footer  .footer-navbar .links li {
+    margin-bottom: 14px;
+}
+
+.footer  .footer-navbar .links li:last-child {
+    margin-bottom: 0;
+}
+
+.footer  .footer-navbar .links li a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 14px;
+}
+
+/* @media footer start  */
+@media (max-width: 1199px) {
+
+
+.footer  .footer-navbar .links-two {
+    padding-left: 0;
+}
+
+.footer  .footer-navbar .links-two li {
+    padding-top: 15px;
+}
+
+.footer  .footer-navbar .links-two li:last-child {
+    padding-top: 0;
+}
+
+}
+/* @media footer end  */
+
+.payment-system {
+    margin-top: 50px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.payment-system img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+.copyright {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+.copyright p {
+    font-size: 14px;
+    color: #fff;
+    font-family: Evolventa-Bold;
+}
+
+/* Footer end */
+
+
+/*Consent page start*/
+.consent .consent-header {
+    margin-bottom: 50px;
+}
+
+.consent .consent-header h1 {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1;
+}
+
+
+.consent .consent-body .consent-body-title {
+    margin-bottom: 50px;
+}
+
+.consent .consent-body .consent-body-title h2 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+}
+
+.consent .consent-body .consent-body-text {
+    margin-bottom: 50px;
+}
+
+.consent .consent-body .consent-body-text:last-child {
+    margin-bottom: 0;
+}
+
+.consent .consent-body .consent-body-text ul {
+    padding-left: 64px;
+}
+
+.consent .consent-body .consent-body-text ul li {
+    list-style: disc;
+}
+
+.consent .consent-body .consent-body-text .number,
+.consent .consent-body .consent-body-text .text-bold {
+    font-weight: bold;
+}
+
+.consent .consent-body .consent-body-text .text-underline {
+    text-decoration: underline;
+}
+
+
+.consent .consent-body p {
+    font-size: 16px;
+    line-height: 26px;
+    text-indent: 48px;
+}
+
+/*Consent page end*/
+
+/*Offer page start*/
+.offer .offer-header {
+    margin-bottom: 50px;
+}
+
+.offer .offer-header h1 {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1;
+}
+
+
+.offer .offer-body .offer-body-title {
+    margin-bottom: 50px;
+}
+
+.offer .offer-body .offer-body-title h2 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+}
+
+.offer .offer-body .offer-body-text {
+    margin-bottom: 50px;
+}
+
+.offer .offer-body .offer-body-text:last-child {
+    margin-bottom: 0;
+}
+
+.offer .offer-body .offer-body-text ul {
+    padding-left: 55px;
+}
+
+.offer .offer-body .offer-body-text ul li {
+    list-style: disc;
+}
+
+.offer .offer-body .offer-body-text .number,
+.offer .offer-body .offer-body-text .text-bold {
+    font-weight: bold;
+}
+
+.offer .offer-body .offer-body-text .text-underline {
+    text-decoration: underline;
+}
+
+
+.offer .offer-body .text-indent {
+    font-size: 16px;
+    line-height: 26px;
+    text-indent: 48px;
+}
+/*Offer page end*/
+
+
+/*Payment page start*/
+.payment .payment-header {
+    margin-bottom: 50px;
+}
+
+.payment .payment-header h1 {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.payment .paymentr-body .payment-body-text {
+    margin-bottom: 50px;
+}
+
+.payment .payment-body .payment-body-text:last-child {
+    margin-bottom: 0;
+}
+
+.payment .payment-body .payment-body-text ul {
+    padding-left: 55px;
+}
+
+.payment .payment-body .payment-body-text ul li {
+    list-style: disc;
+}
+
+.payment .payment-body .payment-body-text .number,
+.payment .payment-body .payment-body-text .text-bold {
+    font-weight: bold;
+}
+
+.payment .payment-body {
+    font-size: 16px;
+    line-height: 26px;
+}
+/*Payment page end*/
+
+
+
