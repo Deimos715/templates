@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <!-- Meta -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta property="og:image" content="https://webdevlabs.ru/assets/img/open_graph_preview.png">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="WebDevLabs - Разработка сайтов, Веб-дизайн и SEO-продвижение">
+        <meta property="og:description" content="WebDevLabs - Разработка сайтов, Веб-дизайн и SEO-продвижение">
+        <meta property="og:url" content="http://webdevlabs.ru/">
+        <meta property="og:site_name" content="WebDevLabs - Разработка сайтов, Веб-дизайн и SEO-продвижение">
+        <meta property="og:locale" content="ru_RU">
+
+        <meta name="description" content="WebDevLabs - Разработка сайтов, Веб-дизайн и SEO-продвижение">
+        <meta name="keywords" content="#">
+
+
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link rel="canonical" href="https://webdevlabs.ru/">
+
+        <!-- favicon -->
+        <link rel="icon" sizes="16x16" href="./assets/img/favicon.svg">
+
+        <!-- Title -->
+        <title>WebDevLabs - Разработка сайтов, Веб-дизайн и SEO-продвижение</title>
+
+        <!-- Style -->
+      <script type="module" crossorigin src="./assets/js/main-BVXpkwQ9.js"></script>
+      <link rel="stylesheet" crossorigin href="./assets/css/main-BGZKEUic.min.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header class="header-section">
+                <div class="header-section__header header">
+                    <!-- Меню Гамбургер -->
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="container header-section__nav-container">
+                        <a href="#" class="header__logo">
+                            <img src="./assets/img/logo.svg" alt="logo">
+                        </a>
+                        <!-- Основное меню -->
+                        <nav class="header__nav nav-menu">
+                            <ul class="nav-menu__list">
+                                <li class="nav-menu__list-item"><a class="nav-menu__link" href="/#services">Услуги</a></li>
+                                <li class="nav-menu__list-item"><a class="nav-menu__link" href="/#projects">Портфолио</a></li>
+                                <li class="nav-menu__list-item"><a class="nav-menu__link" href="/#about-us">О нас</a></li>
+                                <li class="nav-menu__list-item"><a class="nav-menu__link" href="#stages">Этапы</a></li>
+                                <li class="nav-menu__list-item"><a class="nav-menu__link" href="/#feedback">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <section class="brief-section">
+                <div class="container brief-section__container">
+                    <h1 class="brief-section__title">Бриф на разработку сайта</h1>
+            
+                    <!-- Форма -->
+                    <form class="brief-section__form form" method="post" action="">
+                        <!-- Уведомление об успешной отправке -->
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            Ваша форма успешно отправлена.
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            Пожалуйста, исправьте ошибки в форме.
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+
+                        <!-- Раздел 1: Основная информация о клиенте -->
+                        <h2 class="brief-section__subtitle">1. Основная информация</h2>
+                        <div class="form__group">
+                            <label for="contact-person" class="form__label form__required">Контактное лицо:</label>
+                            <input type="text" class="form__input" id="contact-person" placeholder="Введите имя и должность" required>
+                            <div class="form__error">
+                                <p>Обязательное поле.</p>
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <label for="phone" class="form__label form__required">Телефон:</label>
+                            <input type="tel" class="form__input" id="phone" placeholder="Введите номер телефона" required>
+                            <div class="form__error">
+                                <p>Номер телефона должен быть в формате: "+7(999)-999-99-99" и начинаться с "+79".</p>
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <label for="email" class="form__label form__required">E-mail:</label>
+                            <input type="email" class="form__input" id="email" placeholder="Введите email" required>
+                            <div class="form__error">
+                                <p>Обязательное поле.</p>
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <label for="website" class="form__label">Сайт (при наличии):</label>
+                            <input type="url" class="form__input" id="website" placeholder="Введите адрес сайта">
+                        </div>
+
+                        <!-- Раздел 2: Информация о компании -->
+                        <h2 class="brief-section__subtitle">2. Информация о компании</h2>
+                        <div class="form__group">
+                            <label for="company-name" class="form__label">Полное название организации:</label>
+                            <input type="text" class="form__input" id="company-name" placeholder="Введите название">
+                        </div>
+                        <div class="form__group">
+                            <label for="products" class="form__label">Описание основных продуктов/услуг:</label>
+                            <textarea class="form__textarea" id="products" placeholder="Опишите продукты или услуги"></textarea>
+                        </div>
+
+                        <!-- Раздел 3: Конкуренты -->
+                        <h2 class="brief-section__subtitle">3. Конкуренты</h2>
+                        <div class="form__group">
+                            <label for="competitors" class="form__label">Прямые конкуренты:</label>
+                            <textarea class="form__textarea" id="competitors" placeholder="Опишите конкурентов и их сайты"></textarea>
+                        </div>
+
+                        <!-- Раздел 4: Целевая аудитория -->
+                        <h2 class="brief-section__subtitle">4. Целевая аудитория</h2>
+                        <div class="form__group">
+                            <label for="audience" class="form__label">Покупатель продукта/услуги:</label>
+                            <textarea class="form__textarea" id="audience" placeholder="Опишите целевую аудиторию"></textarea>
+                        </div>
+
+                        <!-- Раздел 5: Информация о интернет-проекте -->
+                        <h2 class="brief-section__subtitle">5. Информация о интернет-проекте</h2>
+                        <div class="form__group form__group_after">
+                            <label for="site-type" class="form__label">Какой требуется разработать сайт:</label>
+                            <select class="form__select" id="site-type" required>
+                                <option value="" disabled selected>Выберите тип сайта</option>
+                                <option value="landing-page">Landing page</option>
+                                <option value="site-visitka">Сайт-визитка</option>
+                                <option value="portfolio">Портфолио</option>
+                                <option value="blog">Блог</option>
+                            </select>
+                        </div>
+                        <div class="form__group">
+                            <label for="reasons" class="form__label">Причины создания нового сайта (или изменения существующего):</label>
+                            <textarea class="form__textarea" id="reasons" placeholder="Опишите причины"></textarea>
+                        </div>
+                        <div class="form__group">
+                            <label for="tasks" class="form__label">Основные задачи разработчика:</label>
+                            <textarea class="form__textarea" id="tasks" placeholder="Опишите задачи"></textarea>
+                        </div>
+                        <div class="form__group">
+                            <label for="structure" class="form__label">Предварительная структура сайта:</label>
+                            <textarea class="form__textarea" id="structure" placeholder="Опишите структуру сайта"></textarea>
+                        </div>
+                        <div class="form__group">
+                            <label for="materials" class="form__label">Материалы:</label>
+                            <textarea class="form__textarea" id="materials" placeholder="Какие материалы у Вас есть?"></textarea>
+                        </div>
+                        <div class="form__group">
+                            <label for="deadline" class="form__label">Желаемые сроки разработки:</label>
+                            <input type="text" class="form__input" id="deadline" placeholder="Укажите сроки">
+                        </div>
+                        <div class="form__group">
+                            <label for="budget" class="form__label">Бюджет проекта (возможны ориентировочные рамки от и до):</label>
+                            <input type="text" class="form__input" id="budget" placeholder="Укажите бюджет">
+                        </div>
+
+                        <!-- Раздел 6: Требования к дизайну -->
+                        <h2 class="brief-section__subtitle">6. Требования к дизайну</h2>
+                        <div class="form__group">
+                            <label for="design-requirements" class="form__label">Требования к дизайну:</label>
+                            <textarea class="form__textarea" id="design-requirements" placeholder="Опишите требования"></textarea>
+                        </div>
+                        <div class="form__group">
+                            <label for="examples" class="form__label">Примеры сайтов:</label>
+                            <textarea class="form__textarea" id="examples" placeholder="Приведите примеры сайтов"></textarea>
+                        </div>
+
+                        <!-- Раздел 7: Дополнительная информация -->
+                        <h2 class="brief-section__subtitle">7. Дополнительная информация</h2>
+                        <div class="form__group">
+                            <label for="additional-info" class="form__label">Любая полезная информация:</label>
+                            <textarea class="form__textarea" id="additional-info" placeholder="Дополнительные сведения"></textarea>
+                        </div>
+
+                        <!-- Чекбокс -->
+                        <div class="form__group">
+                            <div class="form__checkbox">
+                                <input type="checkbox" id="consent" required>
+                                <label for="consent">
+                                    Даю согласие на обработку <a href="/consent.html">персональных данных</a>
+                                </label>
+                                <div class="form__error form__error_consent">
+                                    Для продолжения необходимо принять условия.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Проверка на робота -->
+                        <div class="form__group">
+                            <div class="form__checkbox">
+                                <input type="checkbox" id="is_robot" required>
+                                <label for="consent">
+                                    Если вы человек, то снимите флаг-галку
+                                </label>
+                                <div class="form__error form__error_consent form__error_is-robot">
+                                    Если вы человек, то снимите флаг-галку.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Кнопка отправки -->
+                        <div class="form__button buttons">
+                            <button type="submit" class="buttons__main-btn buttons__main-btn_brief-btn">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <footer class="footer-section">
+                <div class="container footer-section__container row">
+                    <div class="col-xl-12 col-lg-12 col-md-12">
+                        <div class="footer-section__copyright">
+                            <p>© WebDevlabs, 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+
+        </div>
+    </body>
+</html>

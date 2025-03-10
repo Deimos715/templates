@@ -72,32 +72,35 @@
                     <nav aria-label="breadcrumb" class="section-area__breadcrumbs">
                         <ol class="breadcrumb">
                             <li class="breadcrumb__item"><a href="index.html">Главная</a></li>
-                            <li class="breadcrumb__item active" aria-current="page">Блог</li>
+                            <li class="breadcrumb__item active" aria-current="page">Поиск по статьям</li>
                         </ol>
                     </nav>
 
                     <div class="row">
                         <div class="col-md-12">
-                            <h1 class="section-area__title-h1 title-h1">Блог о разработке и продвижении сайтов</h1>
-                        </div>
-                    </div>
+                            <h1 class="section-area__category-title-h1 title-h1">Результаты поиска по запросу: "команды"</h1>
+                            <p class="section-area__desc">Было найдено статей по ключевому слову <strong class="section-area__strong">команды</strong>: 38</p>
 
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1 class="section-area__title-h2">Статьи с тегами</h1>
+                            <div class="section-area__buttons">
+                                <div class="section-area__button buttons">
+                                    <a href="#" class="buttons__main-btn buttons__main-btn_sort-date">По дате</a>
+                                </div>
+                                <div class="section-area__button buttons">
+                                    <a href="#" class="buttons__main-btn buttons__main-btn_sort-relevance">По релевантности</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    
                     <div class="row">
                         <!-- Основной контент -->
-                        <div class="col-md-9">
+                        <div class="col-md-12">
                             <div class="section-area__box-articles">
                                 <div class="section-area__article-item article-item">
                                     <div class="article-item__header">
                                         <div class="article-item__category">Категория</div>
                                         <h2 class="article-item__title-h2">Какой то там длинный длинный заголовок</h2>
                                     </div>
-                                    <p>Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные тексты. Несколько букв если рекламных? Взобравшись рот меня залетают ее первую текстами агентство своих рукописи всеми, однажды алфавит безорфографичный! Большой, ручеек!</p>
+                                    <p>Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные <span class="article-item__headline">тексты</span>. Несколько букв если рекламных? Взобравшись рот меня залетают ее первую текстами агентство своих рукописи всеми, однажды алфавит безорфографичный! Большой, ручеек!</p>
                                     <ul class="article-item__meta-info">
                                         <li class="article-item__post-author">Дмитрий Сидоров</li>
                                         
@@ -140,66 +143,6 @@
                                     </ul>
                                     <div class="article-item__button buttons">
                                         <a href="article_detail.html" class="buttons__main-btn buttons__main-btn_article-btn">Читать далее &#187;</a>
-                                    </div>
-                                </div>
-                                <!-- Пагинация -->
-                                <div class="section-area__pagination pagination">
-                                    <a href="#" class="pagination__arrow pagination__arrow--prev disabled" aria-label="К первой странице" title="К первой странице"><i class="fa-solid fa-backward-fast"></i></a>
-                                    
-                                    <a href="#" class="pagination__arrow pagination__arrow--prev disabled" aria-label="Предыдущая страница" title="Предыдущая страница"><i class="fa-solid fa-backward-step"></i></a>
-                                    
-                                    <a href="#" class="pagination__item" title="1">1</a>
-                                    <a href="#" class="pagination__item pagination__item_selected" title="2">2</a>
-                                    <a href="#" class="pagination__item" title="3">3</a>
-                                    
-                                    <a href="#" class="pagination__arrow pagination__arrow--next" aria-label="Следующая страница" title="Следующая страница"><i class="fa-solid fa-forward-step"></i></a>
-
-                                    <a href="#" class="pagination__arrow pagination__arrow--next" aria-label="К последней странице" title="К последней странице"><i class="fa-solid fa-forward-fast"></i></a>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Сайдбар -->
-                        <div class="col-md-3">
-                            <div class="section-area__sidebar">
-                                <!-- Виджет поиска -->
-                                <div class="section-area__search-widget search-widget">
-                                    <h4 class="search-widget__title-widget">Поиск по статьям</h4>
-                                    <form action="#" class="search-widget__form-widget form-widget">
-                                        <div class="form-widget__input-group">
-                                            <input type="text" class="form-widget__search-input" placeholder="Поиск...">
-                                        </div>
-                                        <div class="form__button-group">
-                                            <button type="submit" class="form-widget__search-button">Найти</button>
-                                        </div>
-                                    </form>
-                                </div>
-                                <!-- Виджет категорий -->
-                                <div class="section-area__category-widget category-widget">
-                                    <h4 class="category-widget__title-widget">Категории</h4>
-                                    <ul class="category-widget__list">
-                                        <li class="category-widget__item-category category-widget__item-category_selected">
-                                            <a href="#" class="category-widget__link">
-                                                Тест
-                                            </a>
-                                        </li>
-                                        <li class="category-widget__item-category">
-                                            <a href="#" class="category-widget__link">
-                                                Категория
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- Виджет тегов -->
-                                <div class="section-area__tags-widget tags-widget">
-                                    <h4 class="tags-widget__title-widget">Теги</h4>
-                                    <div class="tags-widget__list">
-                                        <a href="#" class="tags-widget__tag">Тег1</a>
-                                        <a href="#" class="tags-widget__tag">Тег2</a>
-                                        <a href="#" class="tags-widget__tag">Тег3</a>
-                                        <a href="#" class="tags-widget__tag">Тег4</a>
-                                        <a href="#" class="tags-widget__tag">Тег5</a>
                                     </div>
                                 </div>
                             </div>
